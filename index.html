@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>THE WATERR  |  Pure Water, Pure Life  |  Premium Natural Mineral Water</title>
+<meta name="description" content="THE WATERR is a modern premium bottled water brand. Natural mineral water with refined packaging built for luxury hotels, fine dining, gyms and wellness, airports, and premium events. A clean lifestyle water company with a scalable identity. Investor inquiries welcome." />
+<meta name="keywords" content="premium bottled water brand, pure bottled water, modern hydration brand, premium water company, bottled water investment opportunity, clean hydration, lifestyle water brand, premium packaging, natural mineral water, water brand for retail and hospitality" />
+<meta name="theme-color" content="#0D1B2A" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="THE WATERR  |  Pure Water, Pure Life" />
+<meta property="og:description" content="A modern premium bottled water brand built for hospitality, wellness, events, and everyday luxury." />
+<meta property="og:site_name" content="THE WATERR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="THE WATERR  |  Pure Water, Pure Life" />
+<meta name="twitter:description" content="Premium natural mineral water with a refined, scalable brand identity." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFFFFF'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' fill='%230D1B2A' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"THE WATERR","slogan":"Pure Water, Pure Life","description":"A modern premium natural mineral water brand built for hospitality, wellness, events, and everyday luxury.","email":"invest@thewaterr.com"}
+</script>
+
+<style>
+  :root{
+    --white:#FFFFFF;--paper:#FAFBFC;--paper-2:#F1F5F6;
+    --navy:#0D1B2A;--ocean:#102A43;--silver:#C4C7CC;--silver-ink:#7E8893;
+    --aqua:#D6F1F3;--aqua-deep:#A9DCE2;
+    --line:rgba(13,27,42,.12);--line-soft:rgba(13,27,42,.07);
+    --maxw:1240px;
+    --ease:cubic-bezier(.22,.7,.2,1);--ease-soft:cubic-bezier(.25,1,.4,1);
+    --f-display:"Italiana",serif;--f-serif:"Cormorant Garamond",Georgia,serif;--f-ui:"Jost",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--f-ui);font-weight:400;color:var(--navy);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  html.anim body.loading{overflow:hidden;height:100vh}
+  ::selection{background:var(--aqua);color:var(--navy)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  /* Intro curtain */
+  #intro{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,var(--navy),var(--ocean) 60%,#0a3550);transition:transform 1.05s var(--ease) .2s}
+  #intro .glow{position:absolute;inset:-20%;background:radial-gradient(40% 40% at 30% 30%,rgba(214,241,243,.22),transparent 60%),radial-gradient(40% 40% at 75% 75%,rgba(169,220,226,.26),transparent 60%);animation:drift 18s ease-in-out infinite alternate}
+  #intro .ilogo{position:relative;width:min(54vw,360px);opacity:0;transform:translateY(16px);
+    animation:introLogo 1.5s var(--ease-soft) .15s forwards}
+  #intro .iline{position:absolute;bottom:14%;left:50%;transform:translateX(-50%);height:1px;width:0;background:rgba(255,255,255,.5);animation:introLine 1.1s var(--ease) .35s forwards}
+  @keyframes introLogo{0%{opacity:0;transform:translateY(16px) scale(.98)}45%{opacity:1}100%{opacity:1;transform:none}}
+  @keyframes introLine{to{width:min(40vw,260px)}}
+  body.ready #intro{transform:translateY(-100%)}
+  .anim #intro{display:flex}
+
+  /* Atmosphere */
+  .atmos{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .atmos .wash{position:absolute;inset:-25%;background:radial-gradient(38% 30% at 16% 12%, rgba(214,241,243,.55), transparent 60%),radial-gradient(34% 26% at 88% 30%, rgba(169,220,226,.30), transparent 60%),radial-gradient(42% 34% at 60% 92%, rgba(214,241,243,.40), transparent 65%);filter:blur(14px);animation:drift 30s var(--ease-soft) infinite alternate}
+  .atmos .grain{position:absolute;inset:0;opacity:.035;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  @keyframes drift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(2%,-2%,0) scale(1.07)}}
+
+  .progress{position:fixed;top:0;left:0;height:1px;width:0;z-index:130;background:var(--navy)}
+  .ring-cursor{position:fixed;width:30px;height:30px;border:1px solid rgba(13,27,42,.45);border-radius:50%;z-index:200;pointer-events:none;transform:translate(-50%,-50%);transition:width .3s,height .3s,opacity .3s,background .3s,border-color .3s;mix-blend-mode:multiply}
+  .ring-cursor.big{width:58px;height:58px;background:rgba(214,241,243,.16);border-color:rgba(13,27,42,.22)}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;position:relative;z-index:2}
+
+  /* Type helpers */
+  .eyebrow{font-family:var(--f-ui);font-weight:400;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--silver-ink)}
+  .eyebrow .tick{display:inline-block;width:0;height:1px;background:var(--silver);vertical-align:middle;margin-right:14px;transition:width .8s var(--ease) .1s}
+  .kicker.in .eyebrow .tick{width:26px}
+  h2.sec{font-family:var(--f-display);font-weight:400;font-size:clamp(34px,5vw,68px);line-height:1.04;letter-spacing:.005em;color:var(--navy);max-width:15ch}
+  .lead{font-family:var(--f-ui);font-weight:300;font-size:clamp(15.5px,1.3vw,18px);color:var(--silver-ink);max-width:54ch;line-height:1.8}
+
+  /* Mask-line heading reveal */
+  .rh .msk{display:block;overflow:hidden;padding:.02em .05em .14em}
+  .rh .ln{display:block;transition:transform 1.15s var(--ease-soft)}
+  .anim .rh .ln{transform:translateY(122%)}
+  .rh.in .ln{transform:none!important}
+
+  /* Buttons */
+  .btn{font-family:var(--f-ui);font-weight:400;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-radius:0;padding:16px 30px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:12px;position:relative;overflow:hidden;border:1px solid var(--navy);background:transparent;color:var(--navy);transition:color .5s var(--ease),transform .25s var(--ease)}
+  .btn .lbl,.btn .ar{position:relative;z-index:2}
+  .btn .ar{transition:transform .45s var(--ease)}
+  .btn::before{content:"";position:absolute;inset:0;z-index:1;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+  .btn:hover{color:#fff}.btn:hover::before{transform:scaleX(1)}.btn:hover .ar{transform:translateX(5px)}
+  .btn.solid{background:var(--navy);color:#fff}.btn.solid::before{background:var(--ocean)}
+  .btn.light{border-color:rgba(255,255,255,.5);color:#fff}.btn.light::before{background:#fff}.btn.light:hover{color:var(--navy)}
+
+  /* Nav */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:120;transition:transform .55s var(--ease),background .55s var(--ease),padding .55s var(--ease),border-color .55s}
+  header.nav .bar{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:24px 32px;transition:padding .55s var(--ease)}
+  header.nav.scrolled{background:rgba(255,255,255,.82);backdrop-filter:blur(20px) saturate(140%);-webkit-backdrop-filter:blur(20px) saturate(140%);border-bottom:1px solid var(--line-soft)}
+  header.nav.scrolled .bar{padding:14px 32px}
+  header.nav.hide{transform:translateY(-104%)}
+  .brand img{height:30px;width:auto;transition:height .5s var(--ease)}
+  header.nav.scrolled .brand img{height:26px}
+  nav.links{display:flex;align-items:center;gap:38px}
+  nav.links a{font-family:var(--f-ui);font-weight:400;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--navy);position:relative;opacity:.78;transition:opacity .3s}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:0;background:var(--navy);transition:width .4s var(--ease)}
+  nav.links a:hover{opacity:1}nav.links a:hover::after{width:100%}
+  .nav-btn{border:1px solid var(--navy);padding:11px 20px;opacity:1!important}
+  .nav-btn::after{display:none}.nav-btn:hover{background:var(--navy);color:#fff}
+
+  /* Hero */
+  .hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;overflow:hidden}
+  .hero-copy{position:relative;z-index:3;max-width:600px;margin-left:auto;width:100%;padding:120px 48px 60px max(32px,calc((100vw - var(--maxw))/2 + 32px))}
+  .hero .kicker{margin-bottom:30px}
+  .hero-logo{width:clamp(280px,34vw,460px);overflow:hidden;transition:clip-path 1.2s var(--ease-soft) .15s}
+  .anim .hero-logo{clip-path:inset(0 0 110% 0)}
+  .hero-logo.in{clip-path:inset(0 0 -6% 0)!important}
+  .hero-logo img{width:100%;transition:transform 1.2s var(--ease-soft) .15s}
+  .anim .hero-logo img{transform:translateY(14%)}
+  .hero-logo.in img{transform:none!important}
+  .hero .tagline{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:clamp(22px,2.6vw,34px);color:var(--ocean);margin-top:26px}
+  .hero p.sub{font-family:var(--f-ui);font-weight:300;font-size:clamp(15px,1.3vw,17px);color:var(--silver-ink);max-width:440px;margin:24px 0 40px;line-height:1.85}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-visual{position:relative;height:100vh;overflow:hidden;transition:clip-path 1.3s var(--ease-soft) .4s}
+  .anim .hero-visual{clip-path:inset(0 0 0 100%)}
+  .hero-visual.in{clip-path:inset(0 0 0 0)!important}
+  .hero-visual img{width:100%;height:118%;object-fit:cover;object-position:center 40%;position:absolute;top:-9%;left:0;will-change:transform}
+  .hero-visual .sheen{position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.4) 48%,transparent 60%);transform:translateX(-120%);}
+  .hero-visual.in .sheen{animation:sheen 1.4s var(--ease) 1s}
+  @keyframes sheen{to{transform:translateX(120%)}}
+  .hero-watermark{position:absolute;z-index:0;right:38%;top:50%;width:60vw;max-width:760px;opacity:.05;transform:translateY(-50%);pointer-events:none;will-change:transform}
+  .vlabel{position:absolute;right:24px;top:50%;z-index:4;transform:rotate(90deg) translateX(50%);transform-origin:right center;font-family:var(--f-ui);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--silver-ink)}
+  .scrollcue{position:absolute;left:max(32px,calc((100vw - var(--maxw))/2 + 32px));bottom:36px;z-index:4;display:flex;align-items:center;gap:13px;font-family:var(--f-ui);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver-ink)}
+  .scrollcue .ln{width:54px;height:1px;background:var(--silver);position:relative;overflow:hidden}
+  .scrollcue .ln::after{content:"";position:absolute;inset:0;background:var(--navy);transform:translateX(-100%);animation:slide 2.6s var(--ease) infinite}
+  @keyframes slide{0%{transform:translateX(-100%)}55%{transform:translateX(0)}100%{transform:translateX(100%)}}
+
+  section{position:relative;padding:140px 0}
+
+  /* Image reveal wrappers */
+  .clipw{overflow:hidden;border-radius:2px;transition:clip-path 1.25s var(--ease-soft)}
+  .anim .clipw{clip-path:inset(0 0 100% 0)}
+  .clipw.in{clip-path:inset(0 0 0 0)!important}
+  .zoomw img{transition:transform 1.7s var(--ease-soft);will-change:transform}
+  .anim .zoomw img{transform:scale(1.18)}
+  .zoomw.in img{transform:scale(1)!important}
+
+  /* Vision */
+  .vision-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+  .pillars{display:grid;grid-template-columns:1fr 1fr;margin-top:48px;border-top:1px solid var(--line)}
+  .pillar{padding:26px 28px 26px 0;border-bottom:1px solid var(--line);transition:background .5s var(--ease)}
+  .pillar:nth-child(odd){border-right:1px solid var(--line);padding-right:34px}
+  .pillar:nth-child(even){padding-left:34px}
+  .pillar:hover{background:var(--paper)}
+  .pillar .n{font-family:var(--f-display);font-size:15px;color:var(--silver-ink);letter-spacing:.1em}
+  .pillar h4{font-family:var(--f-display);font-size:21px;font-weight:400;margin:10px 0 8px;letter-spacing:.01em}
+  .pillar p{font-family:var(--f-ui);font-weight:300;font-size:13.5px;color:var(--silver-ink);line-height:1.75}
+  .vision-art{position:relative}
+  .vision-art img{width:100%;filter:saturate(1.02);box-shadow:0 40px 80px rgba(13,27,42,.12)}
+  .vision-art .cap{margin-top:18px;display:flex;justify-content:space-between;align-items:center;font-family:var(--f-ui);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--silver-ink)}
+
+  /* Marquee */
+  .marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;background:var(--white)}
+  .marquee .track{display:flex;width:max-content;animation:scrollx 42s linear infinite}
+  .marquee.rev .track{animation-direction:reverse}
+  .marquee:hover .track{animation-play-state:paused}
+  .marquee .it{font-family:var(--f-display);font-size:clamp(22px,3vw,40px);letter-spacing:.05em;color:var(--navy);padding:0 0;display:inline-flex;align-items:center}
+  .marquee .it .tx{padding:0 34px}
+  .marquee .it .dot{width:6px;height:6px;border-radius:50%;background:var(--aqua-deep)}
+  .marquee .it.alt .tx{font-family:var(--f-serif);font-style:italic;color:var(--ocean)}
+  @keyframes scrollx{to{transform:translateX(-50%)}}
+
+  /* Identity */
+  .identity{background:var(--paper);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+  .id-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+  .id-mark{display:flex;flex-direction:column;align-items:flex-start;gap:26px}
+  .id-mark .mono{width:clamp(120px,15vw,190px)}
+  .id-mark .ww{width:clamp(190px,22vw,260px)}
+  .id-mark .tag{font-family:var(--f-serif);font-style:italic;font-size:19px;color:var(--ocean)}
+  .id-right{display:grid;gap:34px}
+  .swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .sw .chip{height:64px;border-radius:2px;border:1px solid var(--line);transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+  .sw:hover .chip{transform:translateY(-5px);box-shadow:0 14px 26px rgba(13,27,42,.12)}
+  .sw .nm{margin-top:11px;font-family:var(--f-ui);font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-align:center}
+  .sw .hx{font-family:var(--f-ui);font-size:10px;color:var(--silver-ink);letter-spacing:.08em;text-align:center}
+  .typerow{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid var(--line);padding-top:28px}
+  .typ .k{font-family:var(--f-ui);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--silver-ink);margin-bottom:8px}
+  .typ .d{font-family:var(--f-display);font-size:30px;letter-spacing:.16em}
+  .typ .s{font-family:var(--f-serif);font-size:30px}
+  .typ .meta{font-family:var(--f-ui);font-size:11px;color:var(--silver-ink);letter-spacing:.08em;margin-top:4px}
+
+  /* Collection */
+  .product .head{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .product h2.sec{max-width:20ch}
+  .product .lead{text-align:center;margin-top:24px}
+  .lineup{margin:64px 0 10px}
+  .lineup img{width:100%;will-change:transform}
+  .skus{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:40px}
+  .sku{padding:30px 26px;border-bottom:1px solid var(--line);transition:background .5s var(--ease);transform-style:preserve-3d}
+  .sku:not(:last-child){border-right:1px solid var(--line)}
+  .sku:hover{background:var(--paper)}
+  .sku .nm{font-family:var(--f-display);font-size:22px;letter-spacing:.02em}
+  .sku .vol{font-family:var(--f-ui);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver-ink);margin-top:4px}
+  .sku p{font-family:var(--f-ui);font-weight:300;font-size:13px;color:var(--silver-ink);margin-top:14px;line-height:1.7}
+  .materials{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:48px}
+  .mat{display:flex;align-items:center;gap:10px;font-family:var(--f-ui);font-size:12px;letter-spacing:.08em;color:var(--navy);border:1px solid var(--line);border-radius:100px;padding:10px 18px;transition:all .4s var(--ease)}
+  .mat svg{width:15px;height:15px;stroke:var(--ocean);fill:none;stroke-width:1.4}
+  .mat:hover{border-color:var(--navy);background:var(--paper);transform:translateY(-2px)}
+  .prod-tag{text-align:center;margin-top:54px;font-family:var(--f-display);font-size:clamp(20px,2.4vw,30px);color:var(--navy);letter-spacing:.01em}
+  .prod-sub{text-align:center;font-family:var(--f-ui);font-weight:300;font-size:14px;color:var(--silver-ink);margin-top:10px;letter-spacing:.04em}
+
+  /* Market */
+  .market-head{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;border-top:1px solid var(--navy)}
+  .stat{padding:38px 26px 30px;border-bottom:1px solid var(--line);position:relative}
+  .stat:not(:last-child){border-right:1px solid var(--line)}
+  .stat .num{font-family:var(--f-display);font-size:clamp(46px,5vw,72px);line-height:.9;color:var(--navy);letter-spacing:.01em}
+  .stat .num small{font-family:var(--f-serif);font-size:.42em;font-style:italic;color:var(--silver-ink)}
+  .stat .bar{height:1px;background:var(--navy);width:0;margin:18px 0;transition:width 1.1s var(--ease) .2s}
+  .stat.in .bar{width:38px}
+  .stat .lbl{font-family:var(--f-ui);font-weight:300;font-size:13px;color:var(--silver-ink);line-height:1.7}
+  .placeholder-note{margin-top:24px;font-family:var(--f-ui);font-size:11.5px;color:var(--silver);text-align:center;letter-spacing:.06em}
+
+  /* Channels */
+  .channels{background:var(--paper);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+  .chan-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .chan{padding:40px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white);position:relative;overflow:hidden;transition:background .5s var(--ease)}
+  .chan svg{width:30px;height:30px;stroke:var(--ocean);fill:none;stroke-width:1.3;margin-bottom:22px;transition:transform .5s var(--ease)}
+  .chan svg path,.chan svg circle{transition:stroke-dashoffset 1.3s var(--ease)}
+  .anim .chan svg path,.anim .chan svg circle{stroke-dasharray:240;stroke-dashoffset:240}
+  .chan.in svg path,.chan.in svg circle{stroke-dashoffset:0!important}
+  .chan .nm{font-family:var(--f-display);font-size:20px;letter-spacing:.02em}
+  .chan .ds{font-family:var(--f-ui);font-weight:300;font-size:12.5px;color:var(--silver-ink);margin-top:8px;line-height:1.65}
+  .chan:hover{background:var(--aqua)}.chan:hover svg{transform:translateY(-4px)}
+
+  /* Investor */
+  .invest-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
+  .points{margin-top:36px}
+  .point{display:flex;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);transition:padding-left .4s var(--ease)}
+  .point:hover{padding-left:8px}
+  .point .ix{font-family:var(--f-display);font-size:15px;color:var(--silver-ink);min-width:34px}
+  .point p{font-family:var(--f-ui);font-weight:300;font-size:15.5px;color:var(--navy)}
+  .ext{background:var(--navy);color:#fff;border-radius:2px;padding:44px 40px;position:relative;overflow:hidden}
+  .ext .glow{position:absolute;inset:-30%;background:radial-gradient(40% 40% at 80% 10%,rgba(169,220,226,.3),transparent 60%);animation:drift 22s ease-in-out infinite alternate}
+  .ext h4{position:relative;font-family:var(--f-display);font-weight:400;font-size:24px;letter-spacing:.02em}
+  .ext .s{position:relative;font-family:var(--f-serif);font-style:italic;font-size:16px;color:var(--aqua-deep);margin:6px 0 26px}
+  .ext .tg{position:relative;font-family:var(--f-ui);font-weight:300;font-size:14.5px;letter-spacing:.03em;padding:14px 0;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;transition:padding-left .4s var(--ease)}
+  .ext .tg:hover{padding-left:10px}
+  .ext .tg span{color:var(--aqua-deep);font-family:var(--f-serif);font-style:italic}
+
+  /* Closing */
+  .closing{padding:0}
+  .closing .panel{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--navy),var(--ocean) 60%,#0a3550);padding:120px 32px;text-align:center}
+  .closing .panel .glow{position:absolute;inset:-20%;background:radial-gradient(40% 40% at 28% 22%,rgba(214,241,243,.22),transparent 60%),radial-gradient(40% 40% at 78% 80%,rgba(169,220,226,.28),transparent 60%);animation:drift 24s ease-in-out infinite alternate}
+  .closing .cmono{position:relative;width:clamp(80px,9vw,118px);margin:0 auto 30px;animation:floaty 6s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .closing h2{position:relative;font-family:var(--f-display);font-weight:400;color:#fff;font-size:clamp(32px,5vw,64px);line-height:1.05;letter-spacing:.01em;max-width:17ch;margin:0 auto}
+  .closing p{position:relative;font-family:var(--f-ui);font-weight:300;color:rgba(255,255,255,.72);max-width:540px;margin:28px auto 46px;font-size:16px;line-height:1.8}
+  .closing .cta-row{position:relative;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  /* Footer */
+  footer{padding:70px 0 56px;background:var(--navy);color:#fff}
+  .foot{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:30px}
+  .foot .flogo{width:170px}
+  .foot .tag{font-family:var(--f-serif);font-style:italic;font-size:17px;color:var(--aqua-deep)}
+  .foot .meta{text-align:right;font-family:var(--f-ui);font-weight:300;font-size:13px;color:rgba(255,255,255,.6);line-height:1.9}
+  .foot .meta a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+  .foot-base{max-width:var(--maxw);margin:46px auto 0;padding:24px 32px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--f-ui);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+
+  /* Reveal */
+  .reveal{transition:opacity 1.1s var(--ease-soft),transform 1.1s var(--ease-soft)}
+  .anim .reveal{opacity:0;transform:translateY(34px)}
+  .anim .reveal.fl{transform:translateX(-40px)}.anim .reveal.fr{transform:translateX(40px)}.anim .reveal.sc{transform:scale(.94)}
+  .reveal.in{opacity:1!important;transform:none!important}
+  .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+  @media(max-width:1024px){
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-copy{order:1;padding:130px 32px 54px;max-width:none;margin:0}
+    .hero-visual{order:2;height:72vh}
+    .anim .hero-visual{clip-path:inset(100% 0 0 0)}
+    .hero-visual.in{clip-path:inset(0 0 0 0)!important}
+    .hero-watermark{display:none}.scrollcue{display:none}.vlabel{right:16px}
+    .vision-grid,.invest-grid,.id-grid,.market-head{grid-template-columns:1fr;gap:48px}
+  }
+  @media(max-width:760px){
+    nav.links a:not(.nav-btn){display:none}
+    section{padding:96px 0}.wrap{padding:0 22px}
+    .pillars{grid-template-columns:1fr}
+    .pillar:nth-child(odd){border-right:none;padding-right:0}
+    .pillar:nth-child(even){padding-left:0}
+    .skus{grid-template-columns:1fr 1fr}.sku:nth-child(odd){border-right:1px solid var(--line)}
+    .stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:none}
+    .chan-grid{grid-template-columns:1fr 1fr}
+    .swatches{grid-template-columns:repeat(3,1fr)}
+    .ring-cursor{display:none}.closing .panel{padding:90px 24px}
+  }
+  @media(max-width:430px){
+    .skus,.stats,.chan-grid,.swatches{grid-template-columns:1fr}
+    .sku:nth-child(odd){border-right:none}.typerow{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal,.rh .ln,.hero-logo,.hero-logo img,.clipw,.zoomw img,.hero-visual{opacity:1!important;transform:none!important;clip-path:none!important}
+    #intro{display:none}
+    .marquee .track{animation:none!important}
+  }
+</style>
+<script>try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('anim');}}catch(e){}</script>
+</head>
+<body class="loading">
+
+<div id="intro" aria-hidden="true">
+  <div class="glow"></div>
+  <img class="ilogo" src="assets/lockup-white.webp" alt="" />
+  <span class="iline"></span>
+</div>
+
+<div class="atmos" aria-hidden="true"><div class="wash"></div><div class="grain"></div></div>
+<div class="progress" id="progress"></div>
+<div class="ring-cursor" id="ring" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="THE WATERR home"><img src="assets/wordmark-navy.webp" alt="THE WATERR" /></a>
+    <nav class="links" aria-label="Primary">
+      <a href="#vision">Vision</a>
+      <a href="#collection">Collection</a>
+      <a href="#market">Market</a>
+      <a href="#channels">Channels</a>
+      <a href="#investors">Investors</a>
+      <a class="nav-btn magnet" href="#invest">Investor Inquiry</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-copy">
+    <div class="kicker reveal in"><span class="eyebrow"><span class="tick"></span>Premium Natural Mineral Water</span></div>
+    <div class="hero-logo" id="heroLogo"><img src="assets/wordmark-navy.webp" alt="THE WATERR" /></div>
+    <div class="tagline reveal in d2">Pure Water, Pure Life</div>
+    <p class="sub reveal in d3">Introducing THE WATERR, a modern bottled water brand built for a cleaner, fresher, and more premium everyday hydration experience.</p>
+    <div class="hero-ctas reveal in d4">
+      <a class="btn solid magnet" href="#vision"><span class="lbl">View the Vision</span><span class="ar" aria-hidden="true">&rarr;</span></a>
+      <a class="btn magnet" href="#invest"><span class="lbl">Investor Inquiry</span></a>
+    </div>
+  </div>
+  <div class="hero-visual" id="heroVisual">
+    <img id="heroImg" src="assets/hero.jpg" alt="THE WATERR natural mineral water bottle on a stone plinth above still water" />
+    <div class="sheen"></div>
+    <span class="vlabel">Natural Mineral Water&nbsp;&nbsp;&middot;&nbsp;&nbsp;500ML</span>
+  </div>
+  <img class="hero-watermark" id="heroWM" src="assets/mono-navy.webp" alt="" aria-hidden="true" />
+  <div class="scrollcue" aria-hidden="true"><span class="ln"></span>Scroll</div>
+</section>
+
+<!-- Vision -->
+<section id="vision">
+  <div class="wrap">
+    <div class="vision-grid">
+      <div>
+        <div class="kicker reveal"><span class="eyebrow"><span class="tick"></span>The Vision</span></div>
+        <h2 class="sec rh" style="margin-top:22px"><span class="msk"><span class="ln">A Bottled Water Brand Built for the Future</span></span></h2>
+        <p class="lead reveal d2" style="margin-top:26px">THE WATERR is designed to stand out in a crowded market through clean branding, premium packaging, and a simple promise: pure water for a pure life.</p>
+        <div class="pillars">
+          <div class="pillar reveal d1"><div class="n">01</div><h4>Premium Positioning</h4><p>A refined identity that reads as quality on every shelf, tray, and table.</p></div>
+          <div class="pillar reveal d2"><div class="n">02</div><h4>Clean Lifestyle Appeal</h4><p>Made for a generation that values purity, design, and modern wellness.</p></div>
+          <div class="pillar reveal d3"><div class="n">03</div><h4>Strong Retail Presence</h4><p>Packaging engineered for instant recognition and lasting recall.</p></div>
+          <div class="pillar reveal d4"><div class="n">04</div><h4>Scalable Identity</h4><p>One elegant system that travels across channels and product lines.</p></div>
+        </div>
+      </div>
+      <div class="vision-art reveal d2">
+        <div class="clipw zoomw"><img src="assets/lifestyle.jpg" alt="THE WATERR bottles styled in a luxury hospitality setting with marble, gift bag, and packaging" /></div>
+        <div class="cap"><span>Hospitality Styling</span><span>The WATERR &middot; RR</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true"><div class="track" id="mq1"></div></div>
+
+<!-- Identity -->
+<section class="identity" id="identity">
+  <div class="wrap">
+    <div class="kicker reveal" style="text-align:center;margin-bottom:54px"><span class="eyebrow"><span class="tick"></span>The Identity System</span></div>
+    <div class="id-grid">
+      <div class="id-mark reveal fl d1">
+        <img class="mono" src="assets/mono-navy.webp" alt="THE WATERR RR monogram" />
+        <img class="ww" src="assets/wordmark-navy.webp" alt="THE WATERR wordmark" />
+        <div class="tag">Pure Water, Pure Life</div>
+      </div>
+      <div class="id-right reveal fr d2">
+        <div class="swatches">
+          <div class="sw"><div class="chip" style="background:#FFFFFF"></div><div class="nm">Crystal White</div><div class="hx">#FFFFFF</div></div>
+          <div class="sw"><div class="chip" style="background:#0D1B2A"></div><div class="nm">Aquatic Navy</div><div class="hx">#0D1B2A</div></div>
+          <div class="sw"><div class="chip" style="background:linear-gradient(135deg,#dfe2e6,#C4C7CC,#a9aeb5)"></div><div class="nm">Mineral Silver</div><div class="hx">#C4C7CC</div></div>
+          <div class="sw"><div class="chip" style="background:#D6F1F3"></div><div class="nm">Soft Aqua</div><div class="hx">#D6F1F3</div></div>
+          <div class="sw"><div class="chip" style="background:#102A43"></div><div class="nm">Deep Ocean</div><div class="hx">#102A43</div></div>
+        </div>
+        <div class="typerow">
+          <div class="typ"><div class="k">Primary Typeface</div><div class="d">AERIS</div><div class="meta">Light / Regular / Medium</div></div>
+          <div class="typ"><div class="k">Supporting Typeface</div><div class="s">Cormorant</div><div class="meta">Regular / Light / Italic</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collection -->
+<section id="collection" class="product">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker reveal"><span class="eyebrow"><span class="tick"></span>The Collection</span></div>
+      <h2 class="sec rh" style="margin-top:22px"><span class="msk"><span class="ln">Designed to Be Seen. Built to Be Remembered.</span></span></h2>
+      <p class="lead reveal d2">A complete packaging system, from everyday PET to a premium glass edition, crafted for maximum shelf impact across every channel.</p>
+    </div>
+    <div class="lineup clipw" id="lineupWrap"><img id="lineupImg" src="assets/lineup.jpg" alt="THE WATERR product lineup: Everyday PET 500ml, Premium Frosted 500ml, Glass Edition 750ml, and the six pack" /></div>
+    <div class="skus">
+      <div class="sku tilt reveal d1"><div class="nm">Everyday PET</div><div class="vol">500 ML</div><p>Crystal clear PET for daily hydration with premium presence.</p></div>
+      <div class="sku tilt reveal d2"><div class="nm">Premium Frosted</div><div class="vol">500 ML</div><p>A soft frosted finish with silver foil for an elevated feel.</p></div>
+      <div class="sku tilt reveal d3"><div class="nm">Glass Edition</div><div class="vol">750 ML</div><p>Sculptural glass built for fine dining and the finest tables.</p></div>
+      <div class="sku tilt reveal d4"><div class="nm">The Six Pack</div><div class="vol">6 &times; 500 ML</div><p>Stackable case packaging engineered for retail and delivery.</p></div>
+    </div>
+    <div class="materials">
+      <span class="mat reveal d1"><svg viewBox="0 0 24 24"><path d="M9 2h6v4l-1 2v12a2 2 0 01-2 2h0a2 2 0 01-2-2V8L9 6z"/></svg>Frosted or Clear Bottle</span>
+      <span class="mat reveal d1"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5L20 9l-4 4 1 6-5-3-5 3 1-6L4 9l5.5-1z"/></svg>Silver Foil Accents</span>
+      <span class="mat reveal d2"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="6" rx="2"/><rect x="8" y="9" width="8" height="12" rx="1"/></svg>Matte Aluminum Cap</span>
+      <span class="mat reveal d2"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 9h6M9 13h6"/></svg>Clear Label Option</span>
+      <span class="mat reveal d3"><svg viewBox="0 0 24 24"><path d="M12 3c4 4 6 7 6 10a6 6 0 01-12 0c0-3 2-6 6-10z"/></svg>Sustainable &amp; Recyclable</span>
+    </div>
+    <p class="prod-tag reveal">A minimal bottle design with maximum shelf impact.</p>
+    <p class="prod-sub reveal d1">Clear branding. Premium finish. Instant recognition.</p>
+  </div>
+</section>
+
+<!-- Market -->
+<section id="market">
+  <div class="wrap">
+    <div class="market-head">
+      <div>
+        <div class="kicker reveal"><span class="eyebrow"><span class="tick"></span>Market Opportunity</span></div>
+        <h2 class="sec rh" style="margin-top:22px"><span class="msk"><span class="ln">Hydration Is Everyday. Brand Is the Difference.</span></span></h2>
+      </div>
+      <p class="lead reveal d2">Water is an essential daily purchase. Consumers are choosing brands that feel cleaner, healthier, and more aligned with their lifestyle. Premium packaging creates stronger shelf appeal and better brand recall, and THE WATERR is positioned for retail, hospitality, events, wellness, and direct distribution.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal d1"><div class="num"><span class="count" data-to="92">0</span><small>%</small></div><div class="bar"></div><div class="lbl">Premium hydration demand trending upward year over year</div></div>
+      <div class="stat reveal d2"><div class="num"><span class="count" data-to="7">0</span><small>x</small></div><div class="bar"></div><div class="lbl">High frequency repeat purchase category for consumers</div></div>
+      <div class="stat reveal d3"><div class="num"><span class="count" data-to="5">0</span><small>+</small></div><div class="bar"></div><div class="lbl">Core channels from hospitality to wellness and events</div></div>
+      <div class="stat reveal d4"><div class="num"><span class="count" data-to="4">0</span></div><div class="bar"></div><div class="lbl">Distinct formats across PET, frosted, glass, and case</div></div>
+    </div>
+    <p class="placeholder-note reveal">Figures shown are illustrative placeholders. Replace with verified data before distribution.</p>
+  </div>
+</section>
+
+<!-- Channels -->
+<section class="channels" id="channels">
+  <div class="wrap">
+    <div class="kicker reveal"><span class="eyebrow"><span class="tick"></span>Brand Applications</span></div>
+    <h2 class="sec rh" style="margin-top:22px"><span class="msk"><span class="ln">One Brand. Multiple Channels.</span></span></h2>
+    <p class="lead reveal d2" style="margin-top:24px">THE WATERR is built to move fluidly across the places people live, work, travel, dine, and celebrate.</p>
+    <div class="chan-grid">
+      <div class="chan tilt reveal d1"><svg viewBox="0 0 32 32"><path d="M3 22V11M3 16h20a6 6 0 016 6v0M3 22h26M7 11h11a3 3 0 013 3v2"/></svg><div class="nm">Luxury Hotels</div><div class="ds">In room and lobby hospitality service</div></div>
+      <div class="chan tilt reveal d2"><svg viewBox="0 0 32 32"><path d="M6 12v8M10 10v12M22 10v12M26 12v8M10 16h12"/></svg><div class="nm">Gyms &amp; Wellness</div><div class="ds">Hydration for studios and recovery</div></div>
+      <div class="chan tilt reveal d3"><svg viewBox="0 0 32 32"><path d="M5 18a11 11 0 0122 0zM3 18h26M16 7V4"/></svg><div class="nm">Fine Dining</div><div class="ds">Refined table water for the finest rooms</div></div>
+      <div class="chan tilt reveal d4"><svg viewBox="0 0 32 32"><path d="M3 18l26-8-7 12-4-3-6 4-1-5z"/></svg><div class="nm">Airports &amp; Lounges</div><div class="ds">Premium pickup for the journey</div></div>
+      <div class="chan tilt reveal d1"><svg viewBox="0 0 32 32"><path d="M16 5l5 6-5 16-5-16zM11 11h10"/></svg><div class="nm">Premium Events</div><div class="ds">Branded hydration for occasions</div></div>
+      <div class="chan tilt reveal d2"><svg viewBox="0 0 32 32"><path d="M7 11h18l-2 16H9zM11 11a5 5 0 0110 0"/></svg><div class="nm">Retail Shelves</div><div class="ds">Standout presence in grocery and convenience</div></div>
+      <div class="chan tilt reveal d3"><svg viewBox="0 0 32 32"><path d="M3 9h15v11H3zM18 13h6l4 4v3h-10zM9 24a2 2 0 11-4 0 2 2 0 014 0zM25 24a2 2 0 11-4 0 2 2 0 014 0z"/></svg><div class="nm">Delivery &amp; Subscription</div><div class="ds">Direct to consumer hydration at home</div></div>
+      <div class="chan tilt reveal d4"><svg viewBox="0 0 32 32"><circle cx="12" cy="18" r="6"/><circle cx="20" cy="18" r="6"/><path d="M12 12l-2-4h4zM20 12l2-4h-4z"/></svg><div class="nm">Weddings &amp; Private</div><div class="ds">Elegant service for celebrations</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee reverse -->
+<div class="marquee rev" aria-hidden="true"><div class="track" id="mq2"></div></div>
+
+<!-- Investors -->
+<section id="investors">
+  <div class="wrap">
+    <div class="invest-grid">
+      <div>
+        <div class="kicker reveal"><span class="eyebrow"><span class="tick"></span>Investor Appeal</span></div>
+        <h2 class="sec rh" style="margin-top:22px"><span class="msk"><span class="ln">A Simple Product With a Powerful Brand Platform</span></span></h2>
+        <p class="lead reveal d2" style="margin-top:26px">THE WATERR combines daily consumer demand with a premium visual identity, giving investors an opportunity to support a brand with strong packaging potential, broad distribution possibilities, and lifestyle driven appeal.</p>
+        <div class="points">
+          <div class="point reveal d1"><span class="ix">01</span><p>Simple, repeatable product category</p></div>
+          <div class="point reveal d1"><span class="ix">02</span><p>Clear and confident brand positioning</p></div>
+          <div class="point reveal d2"><span class="ix">03</span><p>Premium design and packaging potential</p></div>
+          <div class="point reveal d2"><span class="ix">04</span><p>Multiple sales channels from one identity</p></div>
+          <div class="point reveal d3"><span class="ix">05</span><p>Strong, ownable visual identity</p></div>
+          <div class="point reveal d3"><span class="ix">06</span><p>Scalable packaging system and clear line extensions</p></div>
+        </div>
+      </div>
+      <div class="ext reveal fr d2">
+        <div class="glow" aria-hidden="true"></div>
+        <h4>Future Product Extensions</h4>
+        <div class="s">One platform, many directions for growth</div>
+        <div class="tg">Sparkling Water <span>Next</span></div>
+        <div class="tg">Flavoured Water <span>Next</span></div>
+        <div class="tg">Glass Bottle Premium Line <span>Live</span></div>
+        <div class="tg">Event Exclusive Packaging <span>Plan</span></div>
+        <div class="tg">Hotel &amp; Restaurant Private Label <span>Plan</span></div>
+        <div class="tg">Wellness Hydration Products <span>Plan</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Closing -->
+<section class="closing" id="invest">
+  <div class="panel">
+    <div class="glow" aria-hidden="true"></div>
+    <img class="cmono reveal" src="assets/mono-white.webp" alt="THE WATERR RR monogram" />
+    <h2 class="rh"><span class="msk"><span class="ln">Invest in Purity. Build the Future of Hydration.</span></span></h2>
+    <p class="reveal d2">THE WATERR is ready to become a modern bottled water brand built on clarity, beauty, and everyday demand.</p>
+    <div class="cta-row reveal d3">
+      <a class="btn light magnet" style="background:#fff;color:var(--navy);border-color:#fff" href="mailto:invest@thewaterr.com?subject=Investor%20Inquiry%20-%20THE%20WATERR"><span class="lbl">Investor Inquiry</span><span class="ar" aria-hidden="true">&rarr;</span></a>
+      <a class="btn light magnet" href="mailto:invest@thewaterr.com?subject=Request%20Brand%20Deck%20-%20THE%20WATERR"><span class="lbl">Request Brand Deck</span></a>
+      <a class="btn light magnet" href="mailto:partners@thewaterr.com?subject=Partnership%20-%20THE%20WATERR"><span class="lbl">Partner With THE WATERR</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top"><img class="flogo" src="assets/wordmark-white.webp" alt="THE WATERR" /></a>
+    <div class="tag">Pure Water, Pure Life</div>
+    <div class="meta">Investor inquiries welcome<br><a href="mailto:invest@thewaterr.com">invest@thewaterr.com</a></div>
+  </div>
+  <div class="foot-base"><span>The WATERR &middot; Pure Water, Pure Life</span><span>Hydration, Elevated</span></div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  // Failsafe: if any script error occurs, drop animation gating so all content shows
+  window.addEventListener('error', function(){ root.classList.remove('anim'); revealAll(); });
+  function revealAll(){
+    try{ document.querySelectorAll('.reveal,.rh,.kicker,.stat,.chan,.clipw,.hero-logo,.hero-visual').forEach(function(e){ e.classList.add('in'); }); }catch(e){}
+    try{ document.body.classList.remove('loading'); document.body.classList.add('ready'); }catch(e){}
+  }
+  // Backstop: guarantee reveal shortly after load regardless of observer behaviour
+  setTimeout(revealAll, reduce?0:1600);
+
+  /* Intro */
+  function startSite(){
+    document.body.classList.remove('loading');
+    document.body.classList.add('ready');
+    document.getElementById('heroLogo').classList.add('in');
+    document.getElementById('heroVisual').classList.add('in');
+  }
+  if(reduce){ document.body.classList.remove('loading'); }
+  else { window.addEventListener('load', function(){ setTimeout(startSite, 350); });
+         setTimeout(function(){ if(document.body.classList.contains('loading')) startSite(); }, 1500); }
+
+  /* Marquee build */
+  var phrases=[['Pure Water, Pure Life',1],['Natural Mineral Water',0],['THE WATERR',0],['Hydration, Elevated',1],['Pure Water, Pure Life',1],['Premium Hydration',0]];
+  function buildTrack(el){
+    var half='';
+    phrases.forEach(function(p){ half+='<span class="it'+(p[1]?' alt':'')+'"><span class="tx">'+p[0]+'</span><span class="dot"></span></span>'; });
+    el.innerHTML=half+half;
+  }
+  buildTrack(document.getElementById('mq1')); buildTrack(document.getElementById('mq2'));
+
+  /* Scroll handlers */
+  var nav=document.getElementById('nav'), progress=document.getElementById('progress');
+  var heroImg=document.getElementById('heroImg'), heroWM=document.getElementById('heroWM'), lineupImg=document.getElementById('lineupImg');
+  var lastY=0;
+  function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    nav.classList.toggle('scrolled', y>40);
+    if(y>lastY && y>320) nav.classList.add('hide'); else nav.classList.remove('hide');
+    lastY=y;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    progress.style.width=(h>0?(y/h*100):0)+'%';
+    if(heroImg && y<window.innerHeight){ heroImg.style.transform='translateY('+(y*0.14)+'px) scale(1.02)'; }
+    if(heroWM && y<window.innerHeight){ heroWM.style.transform='translateY(calc(-50% + '+(y*0.18)+'px))'; }
+    if(lineupImg){ var r=lineupImg.getBoundingClientRect();
+      if(r.top<window.innerHeight && r.bottom>0){ var p=(window.innerHeight-r.top)/(window.innerHeight+r.height); lineupImg.style.transform='scale('+(1.07-p*0.07)+')'; } }
+  }
+  if(!reduce){ window.addEventListener('scroll', onScroll, {passive:true}); onScroll(); }
+
+  /* Reveal + heading mask + bars + icon draw */
+  var obsItems=document.querySelectorAll('.reveal, .rh, .kicker, .stat, .chan');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.12,rootMargin:'0px 0px -7% 0px'});
+    obsItems.forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+    // clip image wrappers
+    document.querySelectorAll('.clipw').forEach(function(el){
+      var c=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); c.unobserve(e.target);} }); },{threshold:.18});
+      c.observe(el);
+    });
+  } else { obsItems.forEach(function(el){ el.classList.add('in'); }); document.querySelectorAll('.clipw').forEach(function(e){e.classList.add('in');}); }
+
+  /* Count up */
+  var counters=document.querySelectorAll('.count');
+  if('IntersectionObserver' in window && !reduce){
+    var cio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){
+      var el=e.target, to=parseInt(el.getAttribute('data-to'),10), t0=null;
+      function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/1500,1); el.textContent=Math.round((1-Math.pow(1-p,3))*to); if(p<1)requestAnimationFrame(step); }
+      requestAnimationFrame(step); cio.unobserve(el);
+    } }); },{threshold:.6});
+    counters.forEach(function(c){ cio.observe(c); });
+  } else { counters.forEach(function(c){ c.textContent=c.getAttribute('data-to'); }); }
+
+  var fine = window.matchMedia('(pointer:fine)').matches && !reduce;
+
+  /* Ring cursor */
+  var ring=document.getElementById('ring');
+  if(fine){
+    var rx=innerWidth/2, ry=innerHeight/2, tx=rx, ty=ry;
+    document.addEventListener('mousemove', function(e){ tx=e.clientX; ty=e.clientY; });
+    document.querySelectorAll('a,.btn,.sku,.chan,.sw,.mat,.pillar').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ ring.classList.add('big'); });
+      el.addEventListener('mouseleave', function(){ ring.classList.remove('big'); });
+    });
+    (function loop(){ rx+=(tx-rx)*.18; ry+=(ty-ry)*.18; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loop); })();
+  } else { ring.style.display='none'; }
+
+  /* Magnetic buttons */
+  if(fine){
+    document.querySelectorAll('.magnet').forEach(function(el){
+      el.addEventListener('mousemove', function(e){ var r=el.getBoundingClientRect(); var mx=e.clientX-(r.left+r.width/2), my=e.clientY-(r.top+r.height/2); el.style.transform='translate('+(mx*0.22)+'px,'+(my*0.3)+'px)'; });
+      el.addEventListener('mouseleave', function(){ el.style.transform=''; });
+    });
+  }
+
+  /* 3D tilt cards */
+  if(fine){
+    document.querySelectorAll('.tilt').forEach(function(el){
+      el.addEventListener('mousemove', function(e){ var r=el.getBoundingClientRect(); var px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5; el.style.transform='perspective(700px) rotateX('+(-py*5)+'deg) rotateY('+(px*5)+'deg) translateY(-3px)'; });
+      el.addEventListener('mouseleave', function(){ el.style.transform=''; });
+    });
+  }
+
+  /* Smooth anchor */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){ var id=a.getAttribute('href'); if(id.length<2) return; var t=document.querySelector(id); if(!t) return; ev.preventDefault(); var top=t.getBoundingClientRect().top+window.scrollY-64; window.scrollTo({top:top,behavior:reduce?'auto':'smooth'}); });
+  });
+})();
+</script>
+</body>
+</html>

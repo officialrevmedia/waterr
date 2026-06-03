@@ -63,9 +63,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:120;transition:transform .45s ea
 nav.scrolled{background:rgba(244,240,232,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:12px 0}
 nav.hide{transform:translateY(-110%)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{height:52px;display:flex;align-items:center}
+.brand{height:64px;display:flex;align-items:center}
 .brand .rwlogo{height:100%}
-nav.scrolled .brand{height:46px}
+nav.scrolled .brand{height:54px}
 .nav-links{display:flex;gap:30px;align-items:center}
 .nav-links a{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#55524c;position:relative;font-weight:400}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--powder-deep);transition:width .3s}
@@ -267,7 +267,7 @@ html:not(.anim) #intro{display:none}
 
 .hero{position:relative;overflow:hidden}
 .hero-grid{position:relative;z-index:2}
-.hero-fx{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100vw;height:100%;overflow:hidden;pointer-events:none;z-index:0}
+.hero-fx{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none;z-index:0}
 .hero-fx .blob{position:absolute;border-radius:50%;filter:blur(64px);mix-blend-mode:multiply}
 .hero-fx .b1{width:520px;height:520px;background:radial-gradient(circle at 35% 35%,#A9BED6,transparent 70%);top:-130px;left:5%;opacity:.5}
 .hero-fx .b2{width:560px;height:560px;background:radial-gradient(circle at 60% 40%,#C6D4E4,transparent 70%);bottom:-170px;right:7%;opacity:.42}
@@ -292,6 +292,8 @@ html:not(.anim) .hero-fx{display:none}
 .anim .brand .rw-resp{opacity:0;animation:logoText .55s 1.1s ease-out forwards}
 .anim .brand .rw-word{opacity:0;animation:logoText .6s 1.22s ease-out forwards}
 @keyframes logoText{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.sz .style{display:block;font-family:var(--f-round);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--powder-deep);margin-top:3px}
+.spec{font-family:var(--f-round);font-size:12px;letter-spacing:.03em;color:var(--muted);margin-top:18px;max-width:54ch;line-height:1.7}
 </style>
 </head>
 <body>
@@ -424,18 +426,19 @@ html:not(.anim) .hero-fx{display:none}
       <h2 class="display rh"><span class="ln"><span>The bottles.</span></span><span class="ln d2"><span>Thoughtfully made.</span></span></h2>
       <p class="lead reveal d2" style="margin-bottom:8px">Three elegant glass sizes plus food grade aluminum, every one finished with a premium aluminum cap.</p>
       <div class="skus reveal d2">
-        <div class="sku"><div class="sz">750mL</div><div class="use"><b>In Room &amp; Dining</b>Generous hydration with a statement presence.</div></div>
-        <div class="sku"><div class="sz">500mL</div><div class="use"><b>Meetings, Events &amp; Rooms</b>The most versatile size for any setting.</div></div>
-        <div class="sku"><div class="sz">355mL</div><div class="use"><b>Minibar, Welcome &amp; Turndown</b>A refined individual serving.</div></div>
-        <div class="sku"><div class="sz">Aluminum</div><div class="use"><b>Pool &amp; Fitness Areas</b>Infinitely recyclable where glass is not suitable.</div></div>
+        <div class="sku"><div class="sz">750mL<span class="style">Esker</span></div><div class="use"><b>In Room &amp; Dining</b>Generous hydration with a statement presence.</div></div>
+        <div class="sku"><div class="sz">500mL<span class="style">Bullet</span></div><div class="use"><b>Meetings, Events &amp; Rooms</b>The most versatile size for any setting.</div></div>
+        <div class="sku"><div class="sz">355mL<span class="style">Esker II</span></div><div class="use"><b>Minibar, Welcome &amp; Turndown</b>A refined individual serving.</div></div>
+        <div class="sku"><div class="sz">Aluminum<span class="style">Active</span></div><div class="use"><b>Pool &amp; Fitness Areas</b>Infinitely recyclable where glass is not suitable.</div></div>
       </div>
       <div class="chips reveal d3">
-        <span class="chip">Premium aluminum cap</span>
+        <span class="chip">28mm aluminum ROPP cap</span>
         <span class="chip">100% recyclable</span>
         <span class="chip">Tamper evident</span>
-        <span class="chip">Custom branding</span>
+        <span class="chip">Custom printed labels</span>
         <span class="chip">Reusable crate delivery</span>
       </div>
+      <p class="spec reveal d3">Esker, Bullet, and Esker II glass silhouettes, each on a standard 28mm neck with a roll on, pilfer proof aluminum closure. Custom front and back labels, applied and capped on automated Canadian lines.</p>
     </div>
   </div>
 </section>
@@ -445,7 +448,7 @@ html:not(.anim) .hero-fx{display:none}
   <div class="sec-head">
     <span class="kicker reveal">The Technology</span>
     <h2 class="display rh"><span class="ln"><span>An advanced 11 step</span></span><span class="ln d2"><span>purification system.</span></span></h2>
-    <p class="lead reveal d2">Made in Canada and food and drug certified, our system pairs reverse osmosis and UV sterilization with alkaline enhancement to deliver clean, great tasting water at pH 8.0 and above, produced on site to remove transport emissions.</p>
+    <p class="lead reveal d2">Made in Canada and food and drug certified, our system pairs reverse osmosis and UV sterilization with alkaline enhancement to deliver clean, great tasting water at pH 8.0 and above, then filled, capped, and labeled on automated Canadian lines, on site, to remove transport emissions.</p>
   </div>
   <div class="tstats">
     <div class="tstat reveal d1"><div class="n"><span data-to="11">0</span></div><div class="l">Purification Steps</div></div>
@@ -578,28 +581,28 @@ html:not(.anim) .hero-fx{display:none}
   var root=document.documentElement, animOn=root.classList.contains('anim');
   var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
 
-  function revealAll(){
+  function showAll(keepAnim){
     document.querySelectorAll('.reveal,.clipw,.rh').forEach(function(e){e.classList.add('in');});
-    root.classList.remove('anim');
+    if(!keepAnim) root.classList.remove('anim');
     var intro=document.getElementById('intro'); if(intro) intro.classList.add('gone');
   }
-  // Safety net: if anything goes wrong, show everything.
-  window.addEventListener('error',revealAll);
+  // Safety net: if something truly fails, strip animation state and show everything.
+  window.addEventListener('error',function(){showAll(false);});
 
-  if(!animOn){ revealAll(); }
+  if(!animOn){ showAll(false); }
   else{
     // hide intro shortly after load
     window.addEventListener('load',function(){ setTimeout(function(){var i=document.getElementById('intro'); if(i) i.classList.add('gone');},650); });
     setTimeout(function(){var i=document.getElementById('intro'); if(i) i.classList.add('gone');},1700);
     // Backstop: guarantee content is visible even if observers stall
-    setTimeout(revealAll,2600);
+    setTimeout(function(){showAll(true);},2600);
 
     try{
       var io=new IntersectionObserver(function(es){
         es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
       },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
       document.querySelectorAll('.reveal,.clipw,.rh').forEach(function(e){io.observe(e);});
-    }catch(e){ revealAll(); }
+    }catch(e){ showAll(false); }
 
     // count-up
     function countUp(el){

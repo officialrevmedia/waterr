@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://officialrevmedia.github.io/waterr/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://officialrevmedia.github.io/waterr/assets/img/hero-bottle.jpg</image:loc>
+      <image:title>responsible waterr 750mL still water</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://officialrevmedia.github.io/waterr/assets/img/bottles-trio.jpg</image:loc>
+      <image:title>The WATERR bottle family: 750mL, 500mL, 355mL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://officialrevmedia.github.io/waterr/assets/img/guest-room.jpg</image:loc>
+      <image:title>WATERR in a luxury hotel guest room</image:title>
+    </image:image>
+  </url>
+</urlset>

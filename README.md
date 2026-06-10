@@ -1,43 +1,50 @@
-# responsible® waterr — Website
+# responsible waterr · Luxury Website Package
 
-Responsible Water. Premium Experience.
+A high fidelity, fully interactive single page website for the WATERR sustainable premium water program, redesigned to a quiet luxury standard (Apple style: modern, minimal, refined).
 
-A one page site for WATERR, a sustainable premium water program for luxury hospitality, made in Canada.
+## What is inside
 
-## What is in here
-- `index.html` — the complete website. It is fully self contained: all photography is embedded and the logo is built in SVG, so this single file is the whole site. Fonts load from Google Fonts at runtime.
-- `.nojekyll` — tells GitHub Pages to serve the file as is.
+| File | Purpose |
+|---|---|
+| `index.html` | Main site: hero, marquee, standard, impact metrics, bottles, 11 step purification rail, experience gallery, program, FAQ, lead form |
+| `thanks.html` | Post submission thank you page (form redirect target) |
+| `404.html` | Branded not found page (GitHub Pages picks this up automatically) |
+| `robots.txt` | Crawl rules plus sitemap reference |
+| `sitemap.xml` | XML sitemap with image extensions |
+| `site.webmanifest` | PWA manifest with icons and theme color |
+| `favicon.ico` | Multi size favicon |
+| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
+| `assets/css/style.css` | Luxury design layer: frosted glass, transitions, reveals |
+| `assets/js/main.js` | Preloader, ripple canvas, scroll reveals, counters, tabs, FAQ |
+| `assets/img/` | Optimized photography, grey and white logos, all icons |
 
-## Go live on GitHub Pages (about 2 minutes)
-1. Create a new repository on github.com, for example `waterr-site`.
-2. Click **Add file**, then **Upload files**, and drag in `index.html` and `.nojekyll`.
-3. Commit the files.
-4. Open **Settings**, then **Pages**.
-5. Under **Build and deployment**, set **Source** to **Deploy from a branch**, pick the `main` branch and the `/ (root)` folder, then **Save**.
-6. Wait about a minute. The site goes live at `https://YOURUSERNAME.github.io/waterr-site/`.
+## Deploy to GitHub Pages
 
-### Command line option
-```
-git init
-git add .
-git commit -m "responsible waterr launch site"
-git branch -M main
-git remote add origin https://github.com/YOURUSERNAME/waterr-site.git
-git push -u origin main
-```
-Then enable Pages in Settings as above.
+1. Push the entire folder contents to the `waterr` repository root (or `/docs`).
+2. Settings, Pages, deploy from branch `main`.
+3. Done. All asset paths are relative, so the `/waterr/` subpath works out of the box.
 
-## Custom domain (waterr.ca)
-In **Settings**, then **Pages**, add `waterr.ca` under **Custom domain**, then at your registrar add:
-- Four `A` records for the apex pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
-- One `CNAME` record for `www` pointing to `YOURUSERNAME.github.io`.
+## Moving to waterr.ca later
 
-## Editing notes
-- All copy lives in `index.html`. Search a heading to find its section.
-- Brand colors are CSS variables near the top: Powder Blue `#A9BED6`, Warm Ivory `#E7E2DA`, Soft Stone `#C2C2C2`, Charcoal `#2C2C2C`.
-- Type: Cormorant Garamond for display, Montserrat for body, Quicksand for the logo and labels. When you license Korolev Rounded, swap the display font link in the head.
-- The logo is drawn in SVG (the `rwlogo` blocks). To use an official vector later, replace those blocks. It recolors automatically in white on dark sections.
-- The call to action buttons open email to `info@waterr.ca`. Update the address or point them to a form in the closing and nav sections.
-- To swap a photo, replace the matching `data:image/jpeg;base64,...` value, or ask and I can rebuild it for you.
+Search and replace `https://officialrevmedia.github.io/waterr/` with `https://waterr.ca/` in:
+`index.html` (canonical, OG, JSON-LD, form `_next`), `robots.txt`, `sitemap.xml`.
+Then add a `CNAME` file containing `waterr.ca` and update `site.webmanifest` `start_url` and `scope` to `/`.
 
-Responsible Water. Premium Experience.
+## Lead form
+
+The form posts to FormSubmit and delivers to **info@hsholdings.ca**.
+First submission only: FormSubmit emails info@hsholdings.ca a one time activation link. Click it once and all future leads flow through, then redirect to `thanks.html`. A honeypot field is included for spam protection.
+
+## SEO included
+
+- Title, meta description, keywords, canonical, robots directives
+- Open Graph and Twitter Card tags with hero image
+- JSON-LD: Organization, WebSite, Service and FAQPage (rich result eligible)
+- Image sitemap, semantic HTML5, descriptive alt text on every image
+- Lazy loading on below the fold imagery, preloaded hero image
+
+## Accessibility and performance
+
+- Visible focus states, ARIA on menu, tabs, accordion and rail controls
+- `prefers-reduced-motion` respected across all animations
+- Optimized progressive JPEGs (130 to 220 KB each), system smooth scrolling

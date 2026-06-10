@@ -1,0 +1,6 @@
+# responsible waterr · robots.txt
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+
+Sitemap: https://officialrevmedia.github.io/waterr/sitemap.xml

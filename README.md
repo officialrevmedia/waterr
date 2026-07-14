@@ -30,6 +30,21 @@ Search and replace `https://officialrevmedia.github.io/waterr/` with `https://wa
 `index.html` (canonical, OG, JSON-LD, form `_next`), `robots.txt`, `sitemap.xml`.
 Then add a `CNAME` file containing `waterr.ca` and update `site.webmanifest` `start_url` and `scope` to `/`.
 
+## Contact details used on the site
+
+- Phone: 905-450-9214
+- Email: info@hsholdings.ca (all forms and mailto links)
+- Address: 6841 Airport Rd, Mississauga, ON L4V 1E6
+- All waterr.ca references have been removed.
+
+## H&S Group endorsement
+
+The footer carries "A proud member of the H&S Group of Companies" with the H&S Group horizontal lockup, knocked out to white for the dark footer (`assets/img/hs-group-white.png`, generated from the supplied navy 4K master). A navy version is also included at `assets/img/hs-group-navy.png` for any light background use.
+
+## Aluminum bottle image
+
+`assets/img/aluminum-bottle.jpg` is pulled from the existing WATERR site collateral and appears in two places: it swaps into the main product shot when the Aluminum tab is selected, and it sits as a reference thumbnail inside that panel. To replace it with a proper studio shot, drop a new file at the same path and filename. No code changes needed.
+
 ## Lead form
 
 The form posts to FormSubmit and delivers to **info@hsholdings.ca**.

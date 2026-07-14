@@ -189,6 +189,8 @@ body{
 .size-tab.active{background:var(--ink);color:#fff;border-color:var(--ink);}
 .size-panel{display:none;}
 .size-panel.active{display:grid;animation:fadeUp .8s var(--ease-lux);}
+.bottle-shot{transition:opacity .5s var(--ease-lux),transform 1.4s var(--ease-lux);}
+.bottle-shot.swapping{opacity:0;}
 
 /* ---------- purification rail ---------- */
 #rail{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1.5rem;scrollbar-width:none;}

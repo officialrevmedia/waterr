@@ -73,12 +73,25 @@
 
   /* ---------- bottle size selector ---------- */
   const tabs = document.querySelectorAll(".size-tab");
+  const bottleShot = document.getElementById("bottleShot");
   tabs.forEach((tab) => tab.addEventListener("click", () => {
     tabs.forEach((t) => { t.classList.remove("active"); t.setAttribute("aria-selected", "false"); });
     tab.classList.add("active");
     tab.setAttribute("aria-selected", "true");
     document.querySelectorAll(".size-panel").forEach((p) => p.classList.remove("active"));
     document.getElementById(tab.dataset.target).classList.add("active");
+
+    // cross-fade the product shot when the format changes
+    if (bottleShot && tab.dataset.img && bottleShot.getAttribute("src") !== tab.dataset.img) {
+      bottleShot.classList.add("swapping");
+      const next = new Image();
+      next.onload = () => {
+        bottleShot.src = tab.dataset.img;
+        bottleShot.alt = tab.dataset.alt || "";
+        bottleShot.classList.remove("swapping");
+      };
+      next.src = tab.dataset.img;
+    }
   }));
 
   /* ---------- purification rail ---------- */

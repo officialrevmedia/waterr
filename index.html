@@ -56,9 +56,26 @@
       "url": "https://officialrevmedia.github.io/waterr/",
       "logo": "https://officialrevmedia.github.io/waterr/assets/img/icon-512.png",
       "slogan": "Responsible Water. Premium Experience.",
-      "email": "info@waterr.ca",
+      "email": "info@hsholdings.ca",
+      "telephone": "+1-905-450-9214",
+      "parentOrganization": { "@type": "Organization", "name": "H&S Group of Companies" },
       "founder": { "@type": "Person", "name": "Haidar Sakhi", "jobTitle": "Founder & President" },
-      "address": { "@type": "PostalAddress", "addressCountry": "CA", "addressRegion": "ON" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6841 Airport Rd",
+        "addressLocality": "Mississauga",
+        "addressRegion": "ON",
+        "postalCode": "L4V 1E6",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+1-905-450-9214",
+        "email": "info@hsholdings.ca",
+        "areaServed": "CA",
+        "availableLanguage": "English"
+      },
       "areaServed": "Canada",
       "description": "Sustainable premium water program for luxury hospitality. Glass and aluminum bottles, 11 step purification, reusable crate delivery and ESG reporting, made in Canada."
     },
@@ -332,15 +349,19 @@
 
     <div class="grid lg:grid-cols-12 gap-12 items-center">
       <figure class="reveal-img img-hover lg:col-span-6 rounded-sm overflow-hidden aspect-square lg:aspect-[4/5]">
-        <img src="assets/img/bottles-trio.jpg" alt="The WATERR bottle family: 750mL, 500mL and 355mL glass with aluminum caps" class="w-full h-full object-cover" loading="lazy" width="1254" height="1254">
+        <img id="bottleShot" src="assets/img/bottles-trio.jpg" alt="The WATERR bottle family: 750mL, 500mL and 355mL glass with aluminum caps" class="w-full h-full object-cover bottle-shot" loading="lazy" width="1254" height="1254">
       </figure>
 
       <div class="lg:col-span-6">
         <div class="reveal flex flex-wrap gap-3 mb-10" role="tablist" aria-label="Bottle sizes">
-          <button class="size-tab active" role="tab" aria-selected="true" data-target="size-750">750 mL</button>
-          <button class="size-tab" role="tab" aria-selected="false" data-target="size-500">500 mL</button>
-          <button class="size-tab" role="tab" aria-selected="false" data-target="size-355">355 mL</button>
-          <button class="size-tab" role="tab" aria-selected="false" data-target="size-alu">Aluminum</button>
+          <button class="size-tab active" role="tab" aria-selected="true" data-target="size-750"
+                  data-img="assets/img/bottles-trio.jpg" data-alt="The WATERR bottle family: 750mL, 500mL and 355mL glass with aluminum caps">750 mL</button>
+          <button class="size-tab" role="tab" aria-selected="false" data-target="size-500"
+                  data-img="assets/img/bottles-trio.jpg" data-alt="WATERR 500mL glass bottle with premium aluminum cap">500 mL</button>
+          <button class="size-tab" role="tab" aria-selected="false" data-target="size-355"
+                  data-img="assets/img/bottles-trio.jpg" data-alt="WATERR 355mL glass bottle for minibar and turndown service">355 mL</button>
+          <button class="size-tab" role="tab" aria-selected="false" data-target="size-alu"
+                  data-img="assets/img/aluminum-bottle.jpg" data-alt="WATERR food grade aluminum bottle, for pool, spa and fitness areas where glass is not suitable">Aluminum</button>
         </div>
 
         <div id="size-750" class="size-panel active gap-8" role="tabpanel">
@@ -379,6 +400,13 @@
         <div id="size-alu" class="size-panel gap-8" role="tabpanel">
           <h3 class="font-display text-3xl font-light">The Active <span class="italic text-mistdeep">Aluminum</span></h3>
           <p class="text-ink/70 leading-relaxed">Infinitely recyclable, food grade aluminum for pool decks, spas and fitness centres. Lightweight, safe near water, and a superior barrier against light and oxygen.</p>
+          <figure class="glass rounded-sm p-4 flex items-center gap-5">
+            <img src="assets/img/aluminum-bottle.jpg" alt="WATERR aluminum bottle shown in a hospitality setting" class="w-24 h-32 object-cover rounded-sm flex-shrink-0" loading="lazy" width="576" height="960">
+            <figcaption class="text-sm text-ink/60 leading-relaxed">
+              <span class="block text-[0.625rem] tracking-[0.35em] uppercase text-stone mb-2">Aluminum, for reference</span>
+              The same water, the same branding, in a format built for wet and active areas. Custom finishes available.
+            </figcaption>
+          </figure>
           <dl class="grid grid-cols-2 gap-6 text-sm">
             <div><dt class="text-stone tracking-[0.2em] uppercase text-xs mb-1">Best for</dt><dd>Pool &middot; Spa &middot; Fitness</dd></div>
             <div><dt class="text-stone tracking-[0.2em] uppercase text-xs mb-1">Material</dt><dd>Infinitely recyclable</dd></div>
@@ -389,7 +417,7 @@
 
         <div class="reveal mt-12 flex flex-wrap gap-4">
           <a href="#partner" class="btn btn-ink"><span>Request Samples</span></a>
-          <a href="mailto:info@waterr.ca?subject=Bottle%20specification%20sheets" class="btn btn-ghost"><span>Request Spec Sheets</span></a>
+          <a href="mailto:info@hsholdings.ca?subject=WATERR%20bottle%20specification%20sheets" class="btn btn-ghost"><span>Request Spec Sheets</span></a>
         </div>
       </div>
     </div>
@@ -651,9 +679,12 @@
           <li class="flex gap-3"><span class="text-mistdeep">&#10003;</span> Sample bottles for your team</li>
           <li class="flex gap-3"><span class="text-mistdeep">&#10003;</span> Custom label mockups for your brand</li>
         </ul>
-        <p class="mt-8 pt-6 border-t border-ink/10 text-sm text-ink/60">
-          Prefer email? <a class="underline underline-offset-4 decoration-mistdeep hover:text-ink" href="mailto:info@waterr.ca?subject=Partnership%20enquiry">info@waterr.ca</a>
-        </p>
+        <div class="mt-8 pt-6 border-t border-ink/10 text-sm text-ink/60 space-y-2">
+          <p>Prefer to speak with us?</p>
+          <p><a class="underline underline-offset-4 decoration-mistdeep hover:text-ink" href="tel:+19054509214">905-450-9214</a></p>
+          <p><a class="underline underline-offset-4 decoration-mistdeep hover:text-ink" href="mailto:info@hsholdings.ca?subject=WATERR%20partnership%20enquiry">info@hsholdings.ca</a></p>
+          <p class="pt-1">6841 Airport Rd, Mississauga, ON L4V 1E6</p>
+        </div>
       </div>
     </div>
 
@@ -768,14 +799,23 @@
     </div>
     <div class="lg:col-span-4">
       <p class="text-xs tracking-[0.3em] uppercase text-porcelain/40 mb-6">Contact</p>
-      <div class="flex flex-col gap-3 text-sm text-porcelain/70">
-        <a class="hover:text-porcelain transition" href="mailto:info@waterr.ca">info@waterr.ca</a>
+      <address class="not-italic flex flex-col gap-3 text-sm text-porcelain/70">
+        <a class="hover:text-porcelain transition" href="tel:+19054509214">905-450-9214</a>
+        <a class="hover:text-porcelain transition" href="mailto:info@hsholdings.ca">info@hsholdings.ca</a>
+        <p class="leading-relaxed">6841 Airport Rd<br>Mississauga, ON L4V 1E6</p>
         <a class="hover:text-porcelain transition" href="https://www.instagram.com/drinkwaterr" rel="noopener" target="_blank">@drinkwaterr</a>
-        <p>Ontario, Canada</p>
-      </div>
+      </address>
       <a href="#partner" class="btn btn-glass-dark mt-8"><span>Partner With Us</span></a>
     </div>
   </div>
+  <!-- H&S Group endorsement -->
+  <div class="border-t border-porcelain/10">
+    <div class="max-w-wrap mx-auto px-6 lg:px-10 py-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-center">
+      <img src="assets/img/hs-group-white.png" alt="H&amp;S Group of Companies" class="h-10 w-auto opacity-90" width="140" height="50" loading="lazy">
+      <p class="text-sm text-porcelain/60 tracking-wide">A proud member of the H&amp;S Group of Companies</p>
+    </div>
+  </div>
+
   <div class="border-t border-porcelain/10">
     <div class="max-w-wrap mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-porcelain/40">
       <p>&copy; <span id="year"></span> Responsible WATERR. All rights reserved.</p>
